@@ -1,7 +1,8 @@
 import {useState,useEffect} from 'react'
-const url = 'https://api.quotable.io/random';
+const url = 'https://type.fit/api/quotes';
 function Quoto() {
   const [quote,setQuote]=useState("Quoto")
+  const [auth,setAuth]=useState("?")
   useEffect(()=>{
     funky()
   },[])
@@ -13,13 +14,19 @@ function Quoto() {
                 throw new Error(response.statusText)
             }
         }).then(e=>{
-          setQuote(e)
-          console.log(quote)
+          let y = Math.floor(Math.random()*16)
+          setQuote(e[y])
+          
+          setAuth(e[y].author.split(",")[0])
+          if(y===15){
+            setAuth("idk")  
+          }
+          console.log(y)
         }).catch(err=>console.log(err));
   }
   return (
     <div>
-        <h1>"{quote.content}" - {quote.author}</h1>
+        <h1>"{quote.text}" - {auth}</h1>
         <button className="bean" onClick={()=>{funky()} }>Quote</button>
     </div>
   );
