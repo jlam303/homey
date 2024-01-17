@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 const Nav = () => {
   return (
     <nav>
-      <h1>BETTER than BOO-GLE</h1>
+      <h1 className='titleo'>BETTER than BOO-GLE</h1>
       <div className='links'>
           <a href="twitter.com"><FaTwitter /></a>
           <a href="instagram.com"><FaInstagram /></a>

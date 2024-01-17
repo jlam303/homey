@@ -351,6 +351,9 @@ h4 {
 button{
   color: white;
 }
+button svg{
+  color: black;
+}
 .App{
   height: 100vh;
   
@@ -359,7 +362,7 @@ button{
   background-image: url(../halt-1.jpg);
     background-size: cover;
     background-position: center;
-    filter:grayscale(.3) blur(2px);
+    filter:grayscale(1) blur(50px);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -396,8 +399,6 @@ nav{
   align-items: center;
   text-align: center;
 }
-.quoto button{
-}
 .stuff{
   display: flex;
   flex-direction: row;
@@ -413,4 +414,21 @@ nav{
   flex-direction: column;
   width: 40%;
   justify-items: center;
+}
+.titleo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 5vw;
+  margin: 0;
+}
+#search{
+  padding: 1rem;
+  color: white;
+  width: 70%;
+  border: white 1px solid;
+  border-radius: 3px;
+  margin-top: 10rem;
+  margin-left: 15%;
 }
