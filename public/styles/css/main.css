@@ -21,12 +21,6 @@ menu.li {
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
-  font-family: House;
-}
-@font-face {
-  font-family: House;
-  src: url(../HouseOfMontagueDEMO.otf);
 }
 
 main,
@@ -60,7 +54,7 @@ embed {
 }
 
 html {
-  overflow-y: none;
+  overflow-y: scroll;
 }
 
 ul {
@@ -196,8 +190,8 @@ input[type=button] {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #000000;
-  color: #ffffff;
+  background: hsl(280, 70%, 60%);
+  color: hsl(280, 70%, 45%);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -245,34 +239,29 @@ h4 {
 
 p {
   margin-bottom: 1.25rem;
-  color: #ffffff;
+  color: hsl(210, 30%, 52%);
 }
 
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
   }
-
   h2 {
     font-size: 2.5rem;
   }
-
   h3 {
     font-size: 1.75rem;
   }
-
   h4 {
     font-size: 1rem;
   }
-
   body {
     font-size: 1rem;
   }
-
   h1,
-h2,
-h3,
-h4 {
+  h2,
+  h3,
+  h4 {
     line-height: 1;
   }
 }
@@ -314,9 +303,9 @@ h4 {
   width: 2rem;
   height: 2rem;
   border-color: transparent;
-  background: #c0cfdd;
+  background: hsl(210, 30%, 81%);
   border-radius: 50%;
-  color: #ffffff;
+  color: hsl(0, 100%, 40%);
   margin-left: 1rem;
   align-self: center;
   min-width: 2rem;
@@ -324,7 +313,7 @@ h4 {
 
 .question {
   padding: 1rem 1.5rem;
-  border: 2px solid #92abc4;
+  border: 2px solid hsl(210, 30%, 67%);
   margin-bottom: 1rem;
   border-radius: 0.25rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -334,7 +323,7 @@ h4 {
   line-height: 1.5;
 }
 .question p {
-  color: #507395;
+  color: hsl(210, 30%, 45%);
   margin-bottom: 0;
   margin-top: 0.5rem;
 }
@@ -347,45 +336,3 @@ h4 {
 .question header h4 {
   margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
-button{
-  color: white;
-}
-.App{
-  height: 100vh;
-  
-}
-.bImg{
-  background-image: url(../halt-1.jpg);
-    background-size: cover;
-    background-position: center;
-    filter:grayscale(.3) blur(2px);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -5;
-}
-iframe{
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-}
-nav{
-  display: flex;
-    flex-direction: row;
-    height: 7rem;
-    align-items: center;
-    padding: 1rem;
-    justify-content: space-between;
-}
-.links{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 23rem;
-  height: 100%;
-}
-.links a svg{
-  color: white;
-  width: 3rem;
-  height: 3rem;
-}
