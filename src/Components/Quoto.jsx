@@ -25,9 +25,9 @@ function Quoto() {
         }).catch(err=>console.log(err));
   }
   return (
-    <div>
+    <div className='quoto'>
         <h1>"{quote.text}" - {auth}</h1>
-        <button className="bean" onClick={()=>{funky()} }>Quote</button>
+        <button className="bean" onClick={()=>{funky()} }>Click for new Quote</button>
     </div>
   );
 }
