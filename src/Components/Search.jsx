@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { FaMagnifyingGlass } from "react-icons/fa6";
 const Search = () => {
     const [search,setSearch] = useState('')
     const handleClick = ()=>{
@@ -12,8 +13,9 @@ const Search = () => {
         }
     }
   return (
-    <div>
+    <div className='searchy'>
         <input type="text" name='search' id='search' value={search} onChange={(e)=>{setSearch(e.target.value)}} onKeyUp={(e)=>handleEnter(e)}></input>
+        <FaMagnifyingGlass />
     </div>
   )
 }

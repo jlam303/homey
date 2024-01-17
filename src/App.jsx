@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="bImg"></div>
+      <div className="bImg2"></div>
       <Nav></Nav>
       <Search></Search>
       

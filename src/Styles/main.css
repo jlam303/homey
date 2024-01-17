@@ -368,6 +368,17 @@ button svg{
     position: absolute;
     z-index: -5;
 }
+.bImg2 {
+  background-image: url(../rain.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: blur(6px);
+  z-index: -4;
+  opacity: .2;
+}
 nav{
   display: flex;
     flex-direction: row;
@@ -423,7 +434,10 @@ nav{
   font-size: 5vw;
   margin: 0;
 }
-#search{
+.searchy{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
   padding: 1rem;
   color: white;
   width: 70%;
@@ -431,4 +445,18 @@ nav{
   border-radius: 3px;
   margin-top: 10rem;
   margin-left: 15%;
+}
+.searchy svg{
+ width: 2rem;
+ height: 2rem;
+}
+#search{
+color: white;
+width: calc(100% - 1rem);
+font-size: 2rem;
+}
+#search:focus{
+  border: 0ch;
+  outline: 0ch;
+  color: white;
 }
